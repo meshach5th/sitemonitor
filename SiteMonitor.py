@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 from urllib2 import urlopen
 from time import sleep # be nice
 
-BASE_URL = "moodle.clevelandhighschool.org"
+BASE_URL = raw_input("Insert url http:// needed: ")
 
 def make_soup(url):
     html = urlopen(url).read()
