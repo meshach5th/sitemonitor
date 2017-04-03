@@ -13,6 +13,7 @@ def get_category_links(section_url):
     boccat = soup.find("dl", "boccat")
     category_links = [BASE_URL + dd.a["href"] for dd in boccat.findAll("dd")]
     return category_links
+#where is the sleep function?
 
 def get_category_winner(category_url):
     soup = make_soup(category_url)
@@ -26,3 +27,10 @@ def get_category_winner(category_url):
 
 
     print data
+
+   #Not sure if I can understand all of this code -Sam W
+# I added a time input function
+t = int(input("Enter the amount of time between checks:"))
+
+def get_time(t):
+    time.sleep(t)
