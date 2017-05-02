@@ -3,6 +3,7 @@ from urllib2 import urlopen
 from time import sleep # be nice
 
 BASE_URL = raw_input("Insert url http:// needed: ")
+section_url = raw_input("Insert section url: ")
 
 def make_soup(url):
     html = urlopen(url).read()
